@@ -204,7 +204,7 @@ span{
     text-align: center;
 }
 .four{
-    background-image:  url(../images/Art\ gallery.jpeg);
+    background-image:  url(./images/ArtGallery.jpeg);
     background-position: center;
     background-size: cover;
     width: 100%;
