@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augmented Reality</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <header>
+            <a href="index.html" class="logo"> <img src="../images/Logo.png" alt="logo" class="logo-img"></a>            <ul class="navbar">
+                <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="./Vr.html">VR</a></li>
+                <li><a href="./Ar.html">AR</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </div>
+
+
+
+    <div class="swiper">
+        <div class="swiper-wrapper" >
+        <div class="swiper-slide"> <img src="./images/Mona Lisa.jpg" alt="image1"> </div>
+        <div class="swiper-slide"> <img src="./images/The Starry Night.jpg" alt="image1"> </div>
+        <div class="swiper-slide"> <img src="./images/Moai.jpg" alt="image1"> </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <div class="footer" id="footer" style="margin-top: 10%;">
+        <a href="./index.html"><img src="./Logo.png" alt="footerLogo" class="footerLogo"></a>
+        <ul>
+            <li>Terms and Privacy Notice</li>
+            <li>Send us feedback</li>
+            <li>Help</li>
+        </ul>
+        <p>© 1996-2023, XplorAR.com, Inc. or its affiliates</p>
+    </div>
+    <script src="./questions.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
